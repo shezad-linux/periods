@@ -1,0 +1,19 @@
+{
+  "name": "Lumenfall.Gameplay",
+  "rootNamespace": "Lumenfall.Gameplay",
+  "references": [
+    "Lumenfall.Core",
+    "Lumenfall.Data",
+    "Lumenfall.Services",
+    "Lumenfall.World"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

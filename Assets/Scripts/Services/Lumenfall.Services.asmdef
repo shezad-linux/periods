@@ -1,0 +1,17 @@
+{
+  "name": "Lumenfall.Services",
+  "rootNamespace": "Lumenfall.Services",
+  "references": [
+    "Lumenfall.Core",
+    "Lumenfall.Data"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

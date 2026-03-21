@@ -1,0 +1,25 @@
+{
+  "name": "Lumenfall.EditMode.Tests",
+  "rootNamespace": "Lumenfall.Tests.EditMode",
+  "references": [
+    "Lumenfall.Core",
+    "Lumenfall.Data",
+    "Lumenfall.Services",
+    "Lumenfall.World",
+    "Lumenfall.Gameplay"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

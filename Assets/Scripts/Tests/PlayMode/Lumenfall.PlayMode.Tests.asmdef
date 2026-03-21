@@ -1,0 +1,24 @@
+{
+  "name": "Lumenfall.PlayMode.Tests",
+  "rootNamespace": "Lumenfall.Tests.PlayMode",
+  "references": [
+    "Lumenfall.Core",
+    "Lumenfall.Data",
+    "Lumenfall.Services",
+    "Lumenfall.World",
+    "Lumenfall.Gameplay",
+    "Lumenfall.UI"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

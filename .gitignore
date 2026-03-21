@@ -1,0 +1,48 @@
+# macOS
+.DS_Store
+
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+[Uu]ser[Ss]ettings/
+
+# Unity generated files
+sysinfo.txt
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Addressables / generated artifacts
+Assets/AddressableAssetsData/*/*.bin*
+
+# IDE files
+.idea/
+.vscode/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.unityproj
+*.tmproj
+*.pidb
+
+# Rider / JetBrains
+*.DotSettings.user
+
+# Test and tooling artifacts
+period/.playwright-cli/
+output/

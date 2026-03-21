@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ashes of Lumenfall UI Redesign</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23050a12'/%3E%3Cpath d='M32 10 18 32h10l-5 22 23-30H35l6-14Z' fill='%2367edf8'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero-copy">
+        <p class="eyebrow">Figma-Ready Redesign</p>
+        <h1>Ashes of Lumenfall</h1>
+        <p class="lede">
+          A mood-first refresh for the Unity prototype: ritual main menu, stronger save-slot hierarchy,
+          and a combat HUD that reads clearly on touch screens without feeling bolted on.
+        </p>
+        <div class="principles">
+          <article>
+            <h2>Ritual Hierarchy</h2>
+            <p>Scene entry behaves like a world-space altar instead of a placeholder list of buttons.</p>
+          </article>
+          <article>
+            <h2>Readable Combat</h2>
+            <p>Area, health, corruption, and unlocked rites stay visible while the action cluster stays compact.</p>
+          </article>
+          <article>
+            <h2>Save Telemetry</h2>
+            <p>Each slot exposes state before launch: room, health, corruption, and traversal progress.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="design-board">
+        <article class="screen menu-screen">
+          <div class="orb orb-a"></div>
+          <div class="orb orb-b"></div>
+          <div class="menu-left">
+            <p class="overline">Ashes of Lumenfall</p>
+            <h2>Luminous ruins, ritual menus, and a calmer HUD.</h2>
+            <p class="copy">
+              The menu becomes a staging chamber. It foregrounds save confidence, world-state context,
+              and a deliberate visual language that can carry into gameplay overlays.
+            </p>
+            <div class="feature-grid">
+              <div class="feature-card">
+                <span>Save Slot Telemetry</span>
+                <p>HP, corruption, and unlocked traversal rites before launch.</p>
+              </div>
+              <div class="feature-card">
+                <span>Figma-to-Unity Parity</span>
+                <p>Single visual system shared between the concept board and runtime HUD.</p>
+              </div>
+              <div class="feature-card">
+                <span>Atmospheric Panels</span>
+                <p>Glass-dark surfaces with teal and ember glows instead of flat debug boxes.</p>
+              </div>
+            </div>
+            <div class="selected-slot">
+              <p class="small-label">Selected Slot</p>
+              <h3>Cycle Slot 02 | Silent Gate</h3>
+              <p>Resume from Awakening Chamber with 3 traversal rites and corruption score 12.</p>
+              <div class="slot-meta">HP 04/05 <span></span> CORRUPTION 12 <span></span> ABILITIES 03</div>
+              <button>Resume</button>
+            </div>
+          </div>
+
+          <aside class="menu-right">
+            <div class="panel-header">
+              <p>Save Slots</p>
+              <span>Review state before descent</span>
+            </div>
+            <button class="save-card active">
+              <strong>Cycle Slot 01</strong>
+              <p>Continue from Forgotten Market</p>
+              <small>HP 05/05 <span></span> CORR 07 <span></span> AB 02</small>
+            </button>
+            <button class="save-card">
+              <strong>Cycle Slot 02</strong>
+              <p>Resume from Silent Gate</p>
+              <small>HP 04/05 <span></span> CORR 12 <span></span> AB 03</small>
+            </button>
+            <button class="save-card">
+              <strong>Cycle Slot 03 | New Cycle</strong>
+              <p>Fresh descent prepared</p>
+              <small>HP 05/05 <span></span> CORR 00 <span></span> AB 00</small>
+            </button>
+          </aside>
+        </article>
+
+        <article class="screen hud-screen">
+          <div class="hud-scene-glow hud-glow-left"></div>
+          <div class="hud-scene-glow hud-glow-right"></div>
+          <div class="hud-top">
+            <div class="chip wide">AREA <span>Silent Gate</span></div>
+            <div class="chip">HP <span>04/05</span></div>
+            <div class="chip">CORR <span>12</span></div>
+            <div class="chip pause">II</div>
+          </div>
+
+          <div class="hud-abilities">
+            <p>Rites</p>
+            <div class="ability-list">
+              <span class="on">Dash</span>
+              <span class="on">Climb</span>
+              <span class="on">Pulse</span>
+              <span>Phase</span>
+              <span>Grapple</span>
+            </div>
+          </div>
+
+          <div class="stick">
+            <div class="stick-ring">
+              <div class="stick-knob"></div>
+            </div>
+            <p>Move</p>
+          </div>
+
+          <div class="action-cluster">
+            <button class="context-chip">Interact</button>
+            <button>ATK</button>
+            <button>JMP</button>
+            <button>DSH</button>
+          </div>
+
+          <div class="pause-modal">
+            <p class="small-label">Pause Overlay</p>
+            <h3>Hold the line.</h3>
+            <p>Save the current cycle or return to the redesigned menu without losing state.</p>
+            <div class="pause-actions">
+              <button>Resume</button>
+              <button>Save Cycle</button>
+              <button>Main Menu</button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
